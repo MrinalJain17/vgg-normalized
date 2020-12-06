@@ -9,10 +9,10 @@ from multiprocessing import cpu_count
 
 import torch
 import torch.nn as nn
+from torch.utils.data import DataLoader
 import torchvision.datasets as datasets
 import torchvision.models as models
 import torchvision.transforms as transforms
-from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
